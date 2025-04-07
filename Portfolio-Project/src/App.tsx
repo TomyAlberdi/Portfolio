@@ -1,9 +1,11 @@
-import '@/index.css';
+import "@/index.css";
 
 function App() {
   return (
-    <div className="App min-h-screen min-w-screen">
-      <span>testlol</span>
+    <div className="App min-h-screen text-background">
+      <section className="min-h-screen backdrop-blur-xs"> 
+        test
+      </section>
     </div>
   );
 }

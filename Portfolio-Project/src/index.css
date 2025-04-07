@@ -126,11 +126,14 @@
 }
 
 div.App {
+  background-color: #0d1116;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
-    url("/copilot-business-full-screen-6bc6eecf7f38.jpg");
-    background-size: cover;
+    url("/hero-bg-7879ebf1705e.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
