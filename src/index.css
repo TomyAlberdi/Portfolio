@@ -126,14 +126,27 @@
 }
 
 div.App {
-  background-color: #0d1116;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("/hero-bg-7879ebf1705e.webp");
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #161616;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/background-mobile.jpg");
+}
+
+@media (min-width: 768px) {
+  div.App {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("/background-desktop.jpg");
+    width: 100%;
+    height: 100%;
+  }
 }
