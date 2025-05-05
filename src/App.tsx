@@ -4,6 +4,11 @@ import FloatingMenuButton from "@/components/FloatingMenuButton";
 import { useEffect, useState } from "react";
 import FloatingMenu from "@/components/FloatingMenu";
 import "@/i18n";
+import Home from "@/Pages/Home";
+import Experience from "@/Pages/Experience";
+import Projects from "@/Pages/Projects";
+import Skills from "@/Pages/Skills";
+import Contact from "@/Pages/Contact";
 
 function App() {
   const [FloatingMenuOpen, setFloatingMenuOpen] = useState(false);
@@ -24,9 +29,13 @@ function App() {
 
   return (
     <div className="App md:h-screen h-[100svh] flex flex-col items-center justify-start">
-      <ScrollArea className="w-full md:w-4/5 md:h-screen h-[90svh]">
-        <section className="w-full h-full flex flex-col justify-start items-center">
-          <span>ey</span>
+      <ScrollArea className="w-full md:w-4/5 md:h-screen h-[90svh] pt-3">
+        <section className="w-full h-full flex flex-col justify-start items-center gap-3">
+          <Home />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
         </section>
       </ScrollArea>
       <FloatingMenuButton
