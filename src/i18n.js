@@ -14,6 +14,9 @@ const resources = {
       CurrentLanguage: "English",
       Home: "Home",
       Experience: "Experience",
+      Projects: "Personal Projects",
+      Stack: "Tech Stack / Skills",
+      Contact: "Contact",
     },
   },
   es: {
@@ -25,6 +28,9 @@ const resources = {
       CurrentLanguage: "Español",
       Home: "Inicio",
       Experience: "Experiencia",
+      Projects: "Proyectos Personales",
+      Stack: "Tech Stack / Skills",
+      Contact: "Contacto",
     },
   },
 };
