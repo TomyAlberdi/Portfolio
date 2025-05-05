@@ -14,6 +14,7 @@ const resources = {
       Projects: "Personal Projects",
       Stack: "Tech Stack / Skills",
       Contact: "Contact",
+      SoftwareDeveloper: "Software Developer",
     },
   },
   es: {
@@ -28,6 +29,7 @@ const resources = {
       Projects: "Proyectos Personales",
       Stack: "Tech Stack / Skills",
       Contact: "Contacto",
+      SoftwareDeveloper: "Desarrollador de Software",
     },
   },
 };

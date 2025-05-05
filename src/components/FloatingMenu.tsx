@@ -45,8 +45,12 @@ const FloatingMenu = ({ Open, setOpen }: FloatingMenuProps) => {
       </DialogHeader>
       <CommandList className="custom-scrollbar">
         <CommandGroup heading={t("Sections")}>
-          {sections.map((section) => (
-            <CommandItem key={section.label} onSelect={section.action}>
+          {sections.map((section, i) => (
+            <CommandItem
+              key={section.label}
+              onSelect={section.action}
+              tabIndex={i}
+            >
               {section.icon}
               {t(section.label)}
             </CommandItem>
