@@ -23,8 +23,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App md:h-screen h-[100svh] text-background flex flex-col items-center justify-start">
-      <ScrollArea className="w-full md:w-4/5 md:h-screen h-[90svh] border border-red-500">
+    <div className="App md:h-screen h-[100svh] flex flex-col items-center justify-start">
+      <ScrollArea className="w-full md:w-4/5 md:h-screen h-[90svh]">
         <section className="w-full h-full flex flex-col justify-start items-center">
           <span>ey</span>
         </section>
