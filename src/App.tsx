@@ -3,6 +3,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import FloatingMenuButton from "@/components/FloatingMenuButton";
 import { useEffect, useState } from "react";
 import FloatingMenu from "@/components/FloatingMenu";
+import "@/i18n";
 
 function App() {
   const [FloatingMenuOpen, setFloatingMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ function App() {
         Open={FloatingMenuOpen}
         setOpen={setFloatingMenuOpen}
       />
-     <FloatingMenu Open={FloatingMenuOpen} setOpen={setFloatingMenuOpen} /> 
+      <FloatingMenu Open={FloatingMenuOpen} setOpen={setFloatingMenuOpen} />
     </div>
   );
 }
