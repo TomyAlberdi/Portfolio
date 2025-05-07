@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App md:h-screen h-[100svh] flex flex-col items-center justify-start">
-      <ScrollArea className="w-full md:w-4/5 md:h-screen h-[90svh] pt-3">
+      <ScrollArea className="w-full md:w-4/5 h-screen pt-3"> 
         <section className="w-full h-full flex flex-col justify-start items-center gap-3">
           <Home />
           <Experience />

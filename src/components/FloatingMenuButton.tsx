@@ -8,7 +8,7 @@ interface FloatingMenuButtonProps {
 
 const FloatingMenuButton = ({ Open, setOpen }: FloatingMenuButtonProps) => {
   return (
-    <div className="absolute bottom-0 h-[10vh] w-full md:bottom-2 md:w-1/10 md:right-0 flex justify-center items-center">
+    <div className="floatingMenuButton fixed bottom-0 h-[10vh] w-full md:bottom-2 md:w-1/10 md:right-0 flex justify-center items-center z-50">
       <Alert
         className="w-auto cursor-pointer bg-muted"
         onClick={() => setOpen(!Open)}
