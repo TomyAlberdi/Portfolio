@@ -1,3 +1,4 @@
+import Timeline from "@/components/Timeline";
 import {
   Card,
   CardDescription,
@@ -14,19 +15,22 @@ const Home = () => {
       <CardHeader>
         <CardTitle>{t("Home")}</CardTitle>
       </CardHeader>
-      <section className="flex md:flex-row flex-col justify-between items-center w-full md:gap-0 gap-4">
+      <section className="flex md:flex-row flex-col justify-start items-center w-full md:gap-0 gap-4">
         <CardHeader className="md:w-1/3 w-full">
-          <CardTitle className="md:text-[3vw] text-[10vw] font-light text-primary"> 
+          <CardTitle className="md:text-[3vw] text-[10vw] font-light text-primary">
             Tomás Alberdi
           </CardTitle>
           <CardDescription className="md:text-xl text-lg">
             {t("SoftwareDeveloper")}
           </CardDescription>
         </CardHeader>
-        <div className="md:w-2/3 px-6 md:px-0 w-full border border-red-500">  
-          
+        <div className="md:w-1/3 md:ml-[15%] px-6 md:px-0 w-full text-sm">
+          {t("About")}
         </div>
       </section>
+      <CardHeader>
+        <Timeline />
+      </CardHeader>
     </Card>
   );
 };
