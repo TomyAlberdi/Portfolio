@@ -5,7 +5,7 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <Card id="skills">
+    <Card id="skills" className="w-full">
       <CardHeader>
         <CardTitle>{t("Stack")}</CardTitle>
       </CardHeader>

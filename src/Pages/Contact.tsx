@@ -5,7 +5,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <Card id="contact">
+    <Card id="contact" className="w-full mb-[10vh] md:mb-0">
       <CardHeader>
         <CardTitle>{t("Contact")}</CardTitle>
       </CardHeader>
