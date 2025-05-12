@@ -11,16 +11,23 @@ const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <Card id="experience" className="pb-[2.5%] md:pb-6">
+    <Card id="experience" className="pb-2 w-full">
       <CardHeader>
         <CardTitle>{t("Experience")}</CardTitle>
       </CardHeader>
-      <Carousel className="flex justify-center items-center md:justify-start">
-        <CarouselContent className="w-screen md:w-[70vw] border border-red-500">
+      <Carousel
+        className="relative"
+        opts={{
+          align: "start",
+          slidesToScroll: 1,
+          containScroll: "trimSnaps",
+        }}
+      >
+        <CarouselContent>
           {experience.map((item, index) => (
-            <CarouselItem key={index} className="md:w-1/3">
+            <CarouselItem key={index} className="px-2 md:px-0 md:pl-2 md:basis-1/3 w-[10vw] md:w-auto">
               <Card
-                className="h-[60svh] md:h-[70vh] w-[90%] md:w-full ml-[2.5%] md:ml-6"
+                className="h-[60svh] md:h-[500px]"
                 style={{ backgroundColor: item.bkg_color }}
               >
                 {item.name_en}

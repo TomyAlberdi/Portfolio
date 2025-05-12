@@ -25,32 +25,5 @@
       }
     ],
     "wip": false
-  },
-  {
-    "name_en": "DataTrainers Web",
-    "name_es": "DataTrainers Web",
-    "year": "2023 - 2024",
-    "link": "https://datatrainersllc.com/",
-    "role_en": "Lead Frontend Developer",
-    "role_es": "Desarrollador Frontend",
-    "description_en": "Freelancer job in wich I developed an E-Commerce Web App to search, filter and buy online courses. This project includes API calls, responsive design, and accesibility options.",
-    "description_es": "Trabajo freelancer en el que desarrollé un E-Commerce web para buscar, filtrar y comprar cursos online. Este proyecto incluye llamadas a APIs, diseño responsive, y opciones de accesibilidad.",
-    "bkg_color": "#0c3547",
-    "accent_color": "#57D7B4",
-    "icons": [
-      {
-        "name": "React",
-        "icon": "fa-brands fa-react"
-      },
-      {
-        "name": "SCSS",
-        "icon": "fa-brands fa-sass"
-      },
-      {
-        "name": "JavaScript",
-        "icon": "fa-brands fa-js"
-      }
-    ],
-    "wip": false
   }
 ]
