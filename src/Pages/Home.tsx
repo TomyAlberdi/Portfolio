@@ -15,7 +15,7 @@ const Home = () => {
       <CardHeader>
         <CardTitle>{t("Home")}</CardTitle>
       </CardHeader>
-      <section className="flex md:flex-row flex-col justify-start items-center w-full md:gap-0 gap-4">
+      <section className="flex md:flex-row flex-col justify-start items-center w-full gap-4 md:gap-[10%]">
         <CardHeader className="md:w-1/3 w-full">
           <CardTitle className="md:text-[3vw] text-[10vw] font-light text-primary">
             Tomás Alberdi
@@ -24,7 +24,7 @@ const Home = () => {
             {t("SoftwareDeveloper")}
           </CardDescription>
         </CardHeader>
-        <div className="md:w-1/3 md:ml-[15%] px-6 md:px-0 w-full text-sm">
+        <div className="md:w-1/4 px-6 md:px-0 w-full text-sm">
           {t("About")}
         </div>
       </section>
