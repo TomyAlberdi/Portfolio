@@ -9,9 +9,9 @@ interface FloatingMenuButtonProps {
 const FloatingMenuButton = ({ Open, setOpen }: FloatingMenuButtonProps) => {
   // TODO: fix weird position issue on mobile (only smartphone)
   return (
-    <div className="floatingMenuButton fixed bottom-[90svh] h-[10svh] w-full md:bottom-2 md:w-1/10 md:right-0 flex justify-center items-center z-50">
+    <div className="floatingMenuButton fixed bottom-0 h-[75px] w-full md:bottom-2 md:w-1/10 md:right-0 flex justify-center items-center z-50 max-h-[100dvh]">
       <Alert
-        className="w-auto cursor-pointer bg-muted"
+        className="w-auto cursor-pointer bg-muted sticky bottom-2"
         onClick={() => setOpen(!Open)}
       >
         {Open ? <X /> : <Terminal />}
