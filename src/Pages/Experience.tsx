@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/carousel";
 import { useTranslation } from "react-i18next";
 import experience from "@/lib/experience.json";
+import ExperienceCard from "@/components/ExperienceCard";
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -25,13 +26,11 @@ const Experience = () => {
       >
         <CarouselContent>
           {experience.map((item, index) => (
-            <CarouselItem key={index} className="px-2 md:px-0 md:pl-2 md:basis-1/3 w-[10vw] md:w-auto">
-              <Card
-                className="h-[60svh] md:h-[500px]"
-                style={{ backgroundColor: item.bkg_color }}
-              >
-                {item.name_en}
-              </Card>
+            <CarouselItem
+              key={index}
+              className="px-2 md:px-0 md:pl-2 md:basis-[30%] w-[10vw] md:w-auto"
+            >
+              <ExperienceCard {...item} />
             </CarouselItem>
           ))}
         </CarouselContent>

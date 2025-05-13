@@ -1,29 +1,80 @@
 [
-  {
-    "name_en": "DataTrainers Web",
-    "name_es": "DataTrainers Web",
-    "year": "2023 - 2024",
-    "link": "https://datatrainersllc.com/",
-    "role_en": "Lead Frontend Developer",
-    "role_es": "Desarrollador Frontend",
-    "description_en": "Freelancer job in wich I developed an E-Commerce Web App to search, filter and buy online courses. This project includes API calls, responsive design, and accesibility options.",
-    "description_es": "Trabajo freelancer en el que desarrollé un E-Commerce web para buscar, filtrar y comprar cursos online. Este proyecto incluye llamadas a APIs, diseño responsive, y opciones de accesibilidad.",
-    "bkg_color": "#0c3547",
-    "accent_color": "#57D7B4",
-    "icons": [
-      {
-        "name": "React",
-        "icon": "fa-brands fa-react"
-      },
-      {
-        "name": "SCSS",
-        "icon": "fa-brands fa-sass"
-      },
-      {
-        "name": "JavaScript",
-        "icon": "fa-brands fa-js"
-      }
-    ],
-    "wip": false
-  }
+    {
+        "name_en": "DataTrainers Web",
+        "name_es": "DataTrainers Web",
+        "year": "2023 - 2024",
+        "link": "https://datatrainersllc.com/",
+        "role_en": "Lead Frontend Developer",
+        "role_es": "Desarrollador Frontend",
+        "description_en": "Freelancer job in wich I developed an E-Commerce Web App to search, filter and buy online courses. This project includes API calls, responsive design, and accesibility options.",
+        "description_es": "Trabajo freelancer en el que desarrollé un E-Commerce web para buscar, filtrar y comprar cursos online. Este proyecto incluye llamadas a APIs, diseño responsive, y opciones de accesibilidad.",
+        "bkg_color": "#0c3547",
+        "accent_color": "#57D7B4",
+        "icons": [
+            {
+                "name": "React",
+                "icon": "/icons/react.svg"
+            },
+            {
+                "name": "SCSS",
+                "icon": "/icons/sass.svg"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "/icons/javascript.svg"
+            }
+        ],
+        "wip": false
+    },
+    {
+        "name_en": "SB - Olavarría Ceramics",
+        "name_es": "SB - Cerámicos Olavarría",
+        "year": "2024 - pres",
+        "link": null,
+        "role_en": "Lead Software Developer",
+        "role_es": "Desarrollador de Software",
+        "description_es": "Fui encargado de desarrollar un sistema ERP (Enterprise Resource Planning) completo para la empresa. Esto incluye administración de BBDD, manejo de autenticación y autorización, creación de la API CRUD y desarrollo de una Web App. Este sistema permite al usuario gestionar productos, stock, clientes y ventas, y cuenta con una versión mobile.",
+        "description_en": "I was in charge of developing a complete ERP (Enterprise Resource Planning) system for the company. This includes DB administration, authentication and authorization management, creation of the CRUD API and development of a Web App. This system allows the user to manage products, stock, customers and sales, and has a mobile version.",
+        "bkg_color": "#020818",
+        "accent_color": "#1d4ed7",
+        "icons": [
+            {
+                "name": "React",
+                "icon": "/icons/react.svg"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "/icons/typescript.svg"
+            },
+            {
+                "name": "Java",
+                "icon": "/icons/java.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/icons/mysql.svg"
+            },
+            {
+                "name": "AWS",
+                "icon": "/icons/amazonwebservices.svg"
+            },
+            {
+                "name": "TailwindCSS",
+                "icon": "/icons/tailwindcss.svg"
+            },
+            {
+                "name": "Spring Boot",
+                "icon": "/icons/spring.svg"
+            },
+            {
+              "name": "Shadcn UI Components",
+              "icon": "/icons/shadcnui.svg"
+            },
+            {
+              "name": "Vercel",
+              "icon": "/icons/vercel.svg"
+            }
+        ],
+        "wip": false
+    }
 ]
