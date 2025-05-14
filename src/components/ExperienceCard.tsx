@@ -2,6 +2,9 @@ import { ExperienceCardProps } from "@/lib/interfaces";
 import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Button } from "@/components/ui/button";
+import TechTile from "@/components/TechTile";
 const ExperienceCard = (data: ExperienceCardProps) => {
   const { t, i18n } = useTranslation();
   const [LanguageEn, setLanguageEn] = useState(true);
@@ -12,10 +15,44 @@ const ExperienceCard = (data: ExperienceCardProps) => {
 
   return (
     <Card
-      className="h-[60svh] md:h-[500px]"
+      className="h-[60svh] md:h-[500px] py-0 flex flex-col gap-0 border-none"
       style={{ backgroundColor: data.bkg_color }}
     >
-      {LanguageEn ? data.name_en : data.name_es}
+      <section className="h-[25%] flex flex-col">
+        <div className="p-2 h-2/3 flex flex-col justify-center gap-2">
+          <h3
+            className="text-xl"
+            style={{ borderBottom: `2px solid ${data.accent_color}` }}
+          >
+            {LanguageEn ? data.name_en : data.name_es}
+          </h3>
+          <span className="text-xs text-foreground">({data.year})</span>
+        </div>
+        <div className="h-1/3 bg-black/30 flex items-center pl-2">
+          <h4>{LanguageEn ? data.role_en : data.role_es}</h4>
+        </div>
+      </section>
+      <section className="h-[45%] p-2">
+        <ScrollArea className="h-full">
+          {LanguageEn ? data.description_en : data.description_es}
+        </ScrollArea>
+      </section>
+      <section className="h-[30%] flex flex-col">
+        {/* TODO: Implement horizontal scrollin (or carousel) for icons, possibly autoplay */}
+        <div className="h-1/2 p-2">
+          {data.icons.map((icon, index) => (
+            <TechTile key={index} iconName={icon.name} icon={icon.icon} />
+          ))}
+        </div>
+        <div className="h-1/2 p-2">
+          <Button
+            className="h-full w-full cursor-pointer"
+            disabled={data.link === null || data.wip}
+          >
+            {t("Visit")}
+          </Button>
+        </div>
+      </section>
     </Card>
   );
 };

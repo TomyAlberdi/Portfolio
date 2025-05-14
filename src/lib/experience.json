@@ -13,15 +13,15 @@
         "icons": [
             {
                 "name": "React",
-                "icon": "/icons/react.svg"
+                "icon": "https://simpleicons.vercel.app/react/fff"
             },
             {
                 "name": "SCSS",
-                "icon": "/icons/sass.svg"
+                "icon": "https://simpleicons.vercel.app/sass/fff"
             },
             {
                 "name": "JavaScript",
-                "icon": "/icons/javascript.svg"
+                "icon": "https://simpleicons.vercel.app/javascript/fff"
             }
         ],
         "wip": false
@@ -40,11 +40,11 @@
         "icons": [
             {
                 "name": "React",
-                "icon": "/icons/react.svg"
+                "icon": "https://simpleicons.vercel.app/react/fff"
             },
             {
                 "name": "TypeScript",
-                "icon": "/icons/typescript.svg"
+                "icon": "https://simpleicons.vercel.app/typescript/fff"
             },
             {
                 "name": "Java",
@@ -52,27 +52,27 @@
             },
             {
                 "name": "MySQL",
-                "icon": "/icons/mysql.svg"
+                "icon": "https://simpleicons.vercel.app/mysql/fff"
             },
             {
                 "name": "AWS",
-                "icon": "/icons/amazonwebservices.svg"
+                "icon": "https://simpleicons.vercel.app/amazonwebservices/fff"
             },
             {
                 "name": "TailwindCSS",
-                "icon": "/icons/tailwindcss.svg"
+                "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
             },
             {
                 "name": "Spring Boot",
-                "icon": "/icons/spring.svg"
+                "icon": "https://simpleicons.vercel.app/spring/fff"
             },
             {
               "name": "Shadcn UI Components",
-              "icon": "/icons/shadcnui.svg"
+              "icon": "https://simpleicons.vercel.app/shadcnui/fff"
             },
             {
               "name": "Vercel",
-              "icon": "/icons/vercel.svg"
+              "icon": "https://simpleicons.vercel.app/vercel/fff"
             }
         ],
         "wip": false
