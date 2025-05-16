@@ -13,6 +13,8 @@ const ExperienceCard = (data: ExperienceCardProps) => {
     setLanguageEn(language === "en");
   }, [i18n.language]);
 
+  const [ViewDescription, setViewDescription] = useState(false);
+
   return (
     <Card
       className="h-[60svh] md:h-[500px] py-0 flex flex-col gap-0 border-none"
@@ -32,14 +34,26 @@ const ExperienceCard = (data: ExperienceCardProps) => {
           <h4>{LanguageEn ? data.role_en : data.role_es}</h4>
         </div>
       </section>
-      <section className="h-[45%] p-2">
-        <ScrollArea className="h-full">
+      <section className="h-[45%] p-2 relative">
+        <ScrollArea className="h-full z-10">
           {LanguageEn ? data.description_en : data.description_es}
         </ScrollArea>
+        <div
+          className={
+            "absolute h-full w-full left-0 top-0 z-20 backdrop-blur-lg flex justify-center items-center bg-black/30 shadow-inner " +
+            (!ViewDescription ? "" : "hidden")
+          }
+        >
+          <Button
+            className="cursor-pointer"
+            onClick={() => setViewDescription(true)}
+          >
+            {t("ViewJobDescription")}
+          </Button>
+        </div>
       </section>
       <section className="h-[30%] flex flex-col">
-        {/* TODO: Implement horizontal scrollin (or carousel) for icons, possibly autoplay */}
-        <div className="h-1/2 p-2">
+        <div className="h-1/2 px-2 pt-2 gap-2 flex">
           {data.icons.map((icon, index) => (
             <TechTile key={index} iconName={icon.name} icon={icon.icon} />
           ))}

@@ -25,6 +25,7 @@ const resources = {
       CTD: "Graduated as a Certified Tech Developer in Digital House, a degree backed by Globant and Mercado Libre.",
       BS: "Concluded my studies at Digital House by earning the Backend Specialist certification.",
       Freelancing: "Started freelancing as a Software Developer.",
+      ViewJobDescription: "View Job Description",
       Visit: "Visit",
     },
   },
@@ -53,6 +54,7 @@ const resources = {
       BS: "Finalicé mis estudios en Digital House obteniendo la certificación de Backend Specialist.",
       Freelancing:
         "Empecé a trabajar como Desarrollador de Software freelance.",
+      ViewJobDescription: "Ver Descripción del Trabajo",
       Visit: "Visitar",
     },
   },

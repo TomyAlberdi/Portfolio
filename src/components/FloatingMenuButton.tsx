@@ -7,7 +7,6 @@ interface FloatingMenuButtonProps {
 }
 
 const FloatingMenuButton = ({ Open, setOpen }: FloatingMenuButtonProps) => {
-  // TODO: fix weird position issue on mobile (only smartphone)
   return (
     <div className="floatingMenuButton fixed bottom-0 h-[75px] w-full md:bottom-2 md:w-1/10 md:right-0 flex justify-center items-center z-50 max-h-[100dvh]">
       <Alert
