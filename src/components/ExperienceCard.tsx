@@ -40,7 +40,7 @@ const ExperienceCard = (data: ExperienceCardProps) => {
           <h4>{LanguageEn ? data.role_en : data.role_es}</h4>
         </div>
       </section>
-      <section className="h-[45%] p-2 relative">
+      <section className="h-[47.5%] p-2 relative">
         <ScrollArea className="h-full z-10">
           {LanguageEn ? data.description_en : data.description_es}
         </ScrollArea>
@@ -58,7 +58,7 @@ const ExperienceCard = (data: ExperienceCardProps) => {
           </Button>
         </div>
       </section>
-      <section className="h-[30%] flex flex-col">
+      <section className="h-[27.5%] flex flex-col">
         <div className="h-1/2 px-2 pt-2 gap-2 flex">
           {data.icons.map((icon, index) => (
             <TechTile key={index} iconName={icon.name} icon={icon.icon} />
