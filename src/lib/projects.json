@@ -1,0 +1,42 @@
+[
+  {
+    "year": "2023",
+    "name_en": "Weather App",
+    "name_es": "App del Clima",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "SCSS",
+        "icon": "https://simpleicons.vercel.app/sass/fff"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "https://simpleicons.vercel.app/javascript/fff"
+      }
+    ],
+    "link": "https://tomyalberdi.github.io/Weather-App/"
+  },
+  {
+    "año": "2023",
+    "nombre_english": "Favorite Albums Dashboard",
+    "nombre_spanish": "Panel de Álbumes Favoritos",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "SCSS",
+        "icon": "https://simpleicons.vercel.app/sass/fff"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "https://simpleicons.vercel.app/javascript/fff"
+      }
+    ],
+    "link": "https://tomyalberdi.github.io/Albums-Dashboard/"
+  }
+]

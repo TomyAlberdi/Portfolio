@@ -33,7 +33,6 @@ function App() {
         <section className="w-full h-full flex flex-col justify-start items-center gap-2 px-2 py-2">
           <Home />
           <Experience />
-          <Projects />
           <Skills />
           {/* TODO: add extra spacing at bottom of component equal to floating menu button container height */}
           <Contact />
