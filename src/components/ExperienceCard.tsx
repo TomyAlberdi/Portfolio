@@ -15,6 +15,12 @@ const ExperienceCard = (data: ExperienceCardProps) => {
 
   const [ViewDescription, setViewDescription] = useState(false);
 
+  const navigateToLink = () => {
+    if (data.link !== null) {
+      window.open(data.link, "_blank");
+    }
+  };
+
   return (
     <Card
       className="h-[60svh] md:h-[500px] py-0 flex flex-col gap-0 border-none"
@@ -62,6 +68,7 @@ const ExperienceCard = (data: ExperienceCardProps) => {
           <Button
             className="h-full w-full cursor-pointer"
             disabled={data.link === null || data.wip}
+            onClick={navigateToLink}
           >
             {t("Visit")}
           </Button>

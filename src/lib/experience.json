@@ -30,7 +30,7 @@
         "name_en": "SB - Olavarría Ceramics",
         "name_es": "SB - Cerámicos Olavarría",
         "year": "2024 - pres",
-        "link": null,
+        "link": "https://github.com/TomyAlberdi/FA-System",
         "role_en": "Lead Software Developer",
         "role_es": "Desarrollador de Software",
         "description_es": "Fui encargado de desarrollar un sistema ERP (Enterprise Resource Planning) completo para la empresa. Esto incluye administración de BBDD, manejo de autenticación y autorización, creación de la API CRUD y desarrollo de una Web App. Este sistema permite al usuario gestionar productos, stock, clientes y ventas, y cuenta con una versión mobile.",
