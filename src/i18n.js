@@ -27,6 +27,7 @@ const resources = {
       Freelancing: "Started freelancing as a Software Developer.",
       ViewJobDescription: "View Job Description",
       Visit: "Visit",
+      ViewMore: "View More",
     },
   },
   es: {
@@ -56,6 +57,7 @@ const resources = {
         "Empecé a trabajar como Desarrollador de Software freelance.",
       ViewJobDescription: "Ver Descripción del Trabajo",
       Visit: "Visitar",
+      ViewMore: "Ver Más",
     },
   },
 };

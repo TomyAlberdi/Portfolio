@@ -15,7 +15,7 @@ const TechTile = ({ iconName, icon }: techTileProps) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <div className="bg-black/30 w-[18%] aspect-square rounded-lg flex justify-center items-center cursor-pointer p-1 break-all">
+          <div className="bg-black/30 w-[60px] aspect-square rounded-lg flex justify-center items-center cursor-pointer p-1 break-all">
             <img src={icon} alt="iconName" className="h-[75%]" />
           </div>
         </TooltipTrigger>
