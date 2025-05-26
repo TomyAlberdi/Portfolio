@@ -32,8 +32,8 @@ function App() {
       <ScrollArea className="w-full md:w-4/5 md:h-screen max-w-[1250px]"> 
         <section className="w-full h-full flex flex-col justify-start items-center gap-2 px-2 py-2">
           <Home />
-          <Experience />
           <Skills />
+          <Experience />
           {/* TODO: add extra spacing at bottom of component equal to floating menu button container height */}
           <Contact />
         </section>

@@ -23,9 +23,9 @@ interface FloatingMenuProps {
 
 const sections = [
   { icon: <House />, label: "Home", action: () => {} },
-  { icon: <BriefcaseBusiness />, label: "Experience", action: () => {} },
-  { icon: <FolderGit2 />, label: "Projects", action: () => {} },
   { icon: <Layers />, label: "Stack", action: () => {} },
+  { icon: <BriefcaseBusiness />, label: "Experience", action: () => {} },
+  //{ icon: <FolderGit2 />, label: "Projects", action: () => {} },
   { icon: <AtSign />, label: "Contact", action: () => {} },
 ];
 
