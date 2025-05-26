@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { t } = useTranslation();
-
+  //TODO: Design & implement Personal projects component
   return (
     <Card id="projects" className="w-full">
       <CardHeader>

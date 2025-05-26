@@ -25,13 +25,13 @@ const sections = [
   { icon: <House />, label: "Home", action: () => {} },
   { icon: <Layers />, label: "Stack", action: () => {} },
   { icon: <BriefcaseBusiness />, label: "Experience", action: () => {} },
-  //{ icon: <FolderGit2 />, label: "Projects", action: () => {} },
+  { icon: <FolderGit2 />, label: "Projects", action: () => {} },
   { icon: <AtSign />, label: "Contact", action: () => {} },
 ];
 
 const FloatingMenu = ({ Open, setOpen }: FloatingMenuProps) => {
   const { t, i18n } = useTranslation();
-
+  //TODO: Add navigation between sections on menu click (use IDs)
   return (
     <CommandDialog open={Open} onOpenChange={setOpen}>
       <DialogHeader>

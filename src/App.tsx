@@ -34,6 +34,7 @@ function App() {
           <Home />
           <Skills />
           <Experience />
+          <Projects />
           {/* TODO: add extra spacing at bottom of component equal to floating menu button container height */}
           <Contact />
         </section>
