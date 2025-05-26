@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { cn, getActiveBackground } from "@/lib/utils";
-import { AppWindow, Database, Server, Users, Workflow } from "lucide-react";
+import { AppWindow, ChevronRight, Database, Server, Users, Workflow } from "lucide-react";
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -19,9 +19,10 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
 interface MenuCardProps extends React.ComponentProps<"div"> {
   cardName?: string;
   icon?: string;
+  hasChildren?: boolean;
 }
 
-function MenuCard({ className, cardName, icon, ...props }: MenuCardProps) {
+function MenuCard({ className, cardName, icon, hasChildren, ...props }: MenuCardProps) {
   const getIcon = () => {
     switch (cardName) {
       case "Backend":
@@ -44,7 +45,7 @@ function MenuCard({ className, cardName, icon, ...props }: MenuCardProps) {
     <div
       data-slot="card"
       className={cn(
-        "CardComponent text-card-foreground flex flex-row gap-4 text-lg rounded-xl border py-6 shadow-sm ",
+        "CardComponent text-card-foreground flex flex-row gap-3 text-lg rounded-xl border py-6 shadow-sm ",
         getActiveBackground(cardName || ""),
         className
       )}
@@ -52,6 +53,7 @@ function MenuCard({ className, cardName, icon, ...props }: MenuCardProps) {
     >
       {getIcon()}
       <span className="text-center">{cardName}</span>
+      {hasChildren && <ChevronRight size={25} />} 
     </div>
   );
 }

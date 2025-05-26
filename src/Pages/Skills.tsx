@@ -79,7 +79,7 @@ const Skills = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.15 }}
               >
                 <MenuCard
                   className={`transition rounded-2xl p-4 text-center h-full flex items-center justify-center ${
@@ -88,6 +88,7 @@ const Skills = () => {
                   onClick={() => isClickable && handleClick(item)}
                   cardName={cardText}
                   icon={icon}
+                  hasChildren={item.children ? true : false}
                 />
               </motion.div>
             );
