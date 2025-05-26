@@ -5,15 +5,191 @@
       {
         "labelEn": "Go",
         "icon": "https://simpleicons.vercel.app/go/fff",
-        "children": [{ "labelEn": "Basic", "labelEs": "Básico" }]
+        "children": [
+          {
+            "labelEn": "Basic Knowledge",
+            "labelEs": "Conocimiento Básico",
+            "children": [
+              { "labelEn": "Channels", "labelEs": "Canales" },
+              { "labelEn": "Goroutines", "labelEs": "Goroutines" },
+              {
+                "labelEn": "Package Oriented Design",
+                "labelEs": "Diseño Orientado a Paquetes"
+              }
+            ]
+          },
+          {
+            "labelEn": "Go Web"
+          }
+        ]
       },
       {
         "labelEn": "Java",
         "icon": "/icons/java.svg",
         "children": [
           {
-            "labelEn": "Spring Boot",
-            "icon": "https://simpleicons.vercel.app/spring/fff"
+            "labelEn": "Basic Knowledge",
+            "labelEs": "Conocimiento Básico",
+            "children": [
+              {
+                "labelEn": "Object Oriented Programming",
+                "labelEs": "Programación Orientada a Objetos",
+                "children": [
+                  {
+                    "labelEn": "Inheritance",
+                    "labelEs": "Herencia"
+                  },
+                  {
+                    "labelEn": "Polymorphism",
+                    "labelEs": "Polimorfismo"
+                  },
+                  {
+                    "labelEn": "Aggregation",
+                    "labelEs": "Agregación"
+                  },
+                  {
+                    "labelEn": "Association",
+                    "labelEs": "Asociación"
+                  },
+                  {
+                    "labelEn": "Composition",
+                    "labelEs": "Composición"
+                  },
+                  {
+                    "labelEn": "Abstract Class",
+                    "labelEs": "Clase Abstracta"
+                  },
+                  {
+                    "labelEn": "Dynamic Binding",
+                    "labelEs": "Enlace Dinámico"
+                  },
+                  {
+                    "labelEn": "Method Overriding",
+                    "labelEs": "Sobreescritura de Métodos"
+                  },
+                  {
+                    "labelEn": "Overloading",
+                    "labelEs": "Sobrecarga"
+                  }
+                ]
+              },
+              {
+                "labelEn": "Design Patterns",
+                "labelEs": "Patrones de Diseño",
+                "children": [
+                  {
+                    "labelEn": "Data Access Object Pattern",
+                    "labelEs": "Patrón Objeto de Acceso a Datos"
+                  },
+                  {
+                    "labelEn": "Composite Pattern",
+                    "labelEs": "Patrón Composite"
+                  },
+                  {
+                    "labelEn": "Model / View / Controller Pattern",
+                    "labelEs": "Patrón Modelo / Vista / Controlador"
+                  },
+                  {
+                    "labelEn": "Chain of Responsibility Pattern",
+                    "labelEs": "Patrón Cadena de Responsabilidad"
+                  },
+                  {
+                    "labelEn": "Facade Pattern",
+                    "labelEs": "Patrón Fachada"
+                  },
+                  {
+                    "labelEn": "Factory Pattern",
+                    "labelEs": "Patrón Factory"
+                  },
+                  {
+                    "labelEn": "Flyweight Pattern",
+                    "labelEs": "Patrón Flyweight"
+                  },
+                  {
+                    "labelEn": "Observer Pattern",
+                    "labelEs": "Patrón Observer"
+                  },
+                  {
+                    "labelEn": "Proxy Pattern",
+                    "labelEs": "Patrón Proxy"
+                  },
+                  {
+                    "labelEn": "Singleton Pattern",
+                    "labelEs": "Patrón Singleton"
+                  },
+                  {
+                    "labelEn": "State Pattern",
+                    "labelEs": "Patrón State"
+                  },
+                  {
+                    "labelEn": "Strategy Pattern",
+                    "labelEs": "Patrón Strategy"
+                  },
+                  {
+                    "labelEn": "Template Method Pattern",
+                    "labelEs": "Patrón Método Template"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "labelEn": "REST APIs",
+            "labelEs": "APIs REST",
+            "children": [
+              {
+                "labelEn": "Spring Boot MVC",
+                "labelEs": "Spring Boot MVC",
+                "icon": "https://simpleicons.vercel.app/spring/fff"
+              },
+              {
+                "labelEn": "Hibernate",
+                "labelEs": "Hibernate",
+                "icon": "https://simpleicons.vercel.app/hibernate/fff"
+              }
+            ]
+          },
+          {
+            "labelEn": "Microservices",
+            "labelEs": "Microservicios",
+            "children": [
+              {
+                "labelEn": "Spring Cloud",
+                "children": [
+                  {
+                    "labelEn": "API Gateway",
+                    "labelEs": "Puerta de Enlace API"
+                  },
+                  {
+                    "labelEn": "Config Server",
+                    "labelEs": "Servidor de Configuración"
+                  },
+                  {
+                    "labelEn": "Eureka Service Registry",
+                    "labelEs": "Registro de Servicios Eureka"
+                  },
+                  {
+                    "labelEn": "OpenFeign",
+                    "labelEs": "OpenFeign"
+                  },
+                  {
+                    "labelEn": "Circuit Breaker",
+                    "labelEs": "Interruptor de Circuito"
+                  },
+                  {
+                    "labelEn": "Load Balancer",
+                    "labelEs": "Balanceador de Carga"
+                  }
+                ]
+              },
+              {
+                "labelEn": "RabbitMQ",
+                "icon": "https://simpleicons.vercel.app/rabbitmq/fff"
+              },
+              {
+                "labelEn": "Sleuth + Zipkin"
+              }
+            ]
           }
         ]
       }
@@ -22,9 +198,52 @@
   {
     "labelEn": "Frontend",
     "children": [
+      { "labelEn": "HTML", "icon": "https://simpleicons.vercel.app/html5/fff" },
       {
-        "labelEn": "React",
-        "children": [{ "labelEn": "Hooks" }, { "labelEn": "TSX" }]
+        "labelEn": "CSS",
+        "icon": "https://simpleicons.vercel.app/css/fff",
+        "children": [
+          {
+            "labelEn": "SCSS",
+            "icon": "https://simpleicons.vercel.app/sass/fff"
+          },
+          {
+            "labelEn": "Tailwind CSS",
+            "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+          },
+          { "labelEn": "Responsive Design" }
+        ]
+      },
+      {
+        "labelEn": "JavaScript",
+        "icon": "https://simpleicons.vercel.app/javascript/fff",
+        "children": [
+          {
+            "labelEn": "TypeScript",
+            "icon": "https://simpleicons.vercel.app/typescript/fff",
+            "children": [
+              { "labelEn": "Interfaces" },
+              { "labelEn": "Type checking" }
+            ]
+          },
+          {
+            "labelEn": "React",
+            "icon": "https://simpleicons.vercel.app/react/fff",
+            "children": [
+              {
+                "labelEn": "Vite",
+                "icon": "https://simpleicons.vercel.app/vite/fff"
+              },
+              { "labelEn": "Hooks" },
+              {
+                "labelEn": "Router",
+                "icon": "https://simpleicons.vercel.app/reactrouter/fff"
+              },
+              { "labelEn": "API requests" },
+              { "labelEn": "Contexts" }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -34,19 +253,92 @@
     "children": [
       {
         "labelEn": "MongoDB",
-        "children": [{ "labelEn": "Mongoose" }]
+        "icon": "https://simpleicons.vercel.app/mongodb/fff",
+        "children": [
+          { "labelEn": "Mongosh" },
+          { "labelEn": "Spring Boot Data" },
+          { "labelEn": "MongoDB Compass" }
+        ]
       },
       {
-        "labelEn": "MySQL"
+        "labelEn": "MySQL",
+        "icon": "https://simpleicons.vercel.app/mysql/fff",
+        "children": [
+          { "labelEn": "Joins" },
+          { "labelEn": "Indexes", "labelEs": "Índices" },
+          { "labelEn": "Views", "labelEs": "Vistas" },
+          {
+            "labelEn": "Stored Procedures",
+            "labelEs": "Procedimientos Almacenados"
+          },
+          {
+            "labelEn": "Hibernate (Spring Boot Backend)",
+            "icon": "https://simpleicons.vercel.app/hibernate/fff"
+          }
+        ]
       }
     ]
   },
   {
     "labelEn": "DevOps",
-    "children": [{ "labelEn": "Docker" }, { "labelEn": "GitHub Actions" }]
+    "children": [
+      {
+        "labelEn": "Docker",
+        "icon": "https://simpleicons.vercel.app/docker/fff",
+        "children": [
+          { "labelEn": "Docker Compose" },
+          { "labelEn": "Dockerfile" }
+        ]
+      },
+      { "labelEn": "GitHub Actions" },
+      {
+        "labelEn": "Cloud Platforms",
+        "labelEs": "Servicios en la Nube",
+        "children": [
+          {
+            "labelEn": "AWS",
+            "icon": "https://simpleicons.vercel.app/amazonwebservices/fff",
+            "children": [
+              { "labelEn": "EC2", "icon": "https://simpleicons.vercel.app/amazonec2/fff" },
+              { "labelEn": "S3", "icon": "https://simpleicons.vercel.app/amazons3/fff" },
+              { "labelEn": "RDS", "icon": "https://simpleicons.vercel.app/amazonrds/fff" }
+            ]
+          },
+          {
+            "labelEn": "Vercel",
+            "icon": "https://simpleicons.vercel.app/vercel/fff"
+          }
+        ]
+      },
+      {
+        "labelEn": "Bash",
+        "icon": "https://simpleicons.vercel.app/gnubash/fff"
+      },
+      {
+        "labelEn": "Git",
+        "icon": "https://simpleicons.vercel.app/git/fff"
+      }
+    ]
   },
   {
     "labelEn": "Soft Skills",
-    "children": [{ "labelEn": "Communication", "labelEs": "Comunicación" }]
+    "children": [
+      {
+        "labelEn": "Agile",
+        "children": [
+          { "labelEn": "Scrum" },
+          { "labelEn": "Kanban" },
+          { "labelEn": "Lean" }
+        ]
+      },
+      {
+        "labelEn": "Collaboration",
+        "labelEs": "Colaboración",
+        "children": [
+          { "labelEn": "Pair Programming", "labelEs": "Programación en Par" },
+          { "labelEn": "Code Reviews", "labelEs": "Reviews de Código" }
+        ]
+      }
+    ]
   }
 ]
