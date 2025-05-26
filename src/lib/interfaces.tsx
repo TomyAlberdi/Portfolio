@@ -17,3 +17,10 @@ export interface ExperienceCardProps {
   icons: Icon[];
   wip: boolean;
 }
+
+export interface MenuItem {
+  labelEn: string;
+  labelEs?: string;
+  icon?: string;
+  children?: MenuItem[];
+}

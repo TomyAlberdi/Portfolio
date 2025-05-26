@@ -1,80 +1,98 @@
-import BackendContent from "@/components/Skills/BackendContent";
-import DatabaseContent from "@/components/Skills/DatabaseContent";
-import DevOpsContent from "@/components/Skills/DevOpsContent";
-import FrontendContent from "@/components/Skills/FrontendContent";
-import SoftSkillsContent from "@/components/Skills/SoftSkillsContent";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  MenuCard,
+} from "@/components/ui/card";
+import { MenuItem } from "@/lib/interfaces";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import skills from "@/lib/skills.json";
+import { Button } from "@/components/ui/button";
+import { ChevronRight, ChevronsLeft } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { getActiveBackground } from "@/lib/utils";
 
 const Skills = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const [path, setPath] = useState<MenuItem[]>([]);
+
+  const currentLevel =
+    path.length === 0 ? skills : path[path.length - 1].children || [];
+
+  const basePath = path.length > 0 ? path[0].labelEn : null;
+
+  const getBreadcrumbs = () => {
+    return path.map((item) => {
+      const label =
+        i18n.language === "en" || !item.labelEs ? item.labelEn : item.labelEs;
+      return (
+        <>
+          <ChevronRight className="inline h-6 w-6" /> {label}
+        </>
+      );
+    });
+  };
+
+  const handleClick = (item: MenuItem) => {
+    if (item.children) setPath([...path, item]);
+  };
+
+  const handleBack = () => {
+    setPath(path.slice(0, -1));
+  };
 
   return (
-    <Card id="skills" className="w-full pb-2">
-      <CardHeader>
-        <CardTitle>{t("Stack")}</CardTitle>
+    <Card
+      id="skills"
+      className={` w-full pb-2 ${getActiveBackground(
+        basePath || "none"
+      )} transition-all duration-300`}
+    >
+      <CardHeader className="flex flex-row justify-between items-center">
+        <CardTitle className="flex items-center gap-1">
+          {t("Stack")}
+          <span className="hidden md:flex gap-2 ml-2 items-center">{getBreadcrumbs()}</span>
+        </CardTitle>
+        <Button
+          onClick={handleBack}
+          className={`${path.length > 0 ? "" : "invisible"}`}
+        >
+          <ChevronsLeft />
+          <span className="hidden md:inline">{t("Back")}</span>
+        </Button>
       </CardHeader>
-      <CardContent className="px-2">
-        <Tabs defaultValue="backend">
-          <TabsList className="grid w-full grid-cols-5">
-            <TabsTrigger value="backend" triggerName="Backend">
-              Backend
-            </TabsTrigger>
-            <TabsTrigger value="frontend" triggerName="Frontend">
-              Frontend
-            </TabsTrigger>
-            <TabsTrigger value="databases" triggerName="Databases">
-              Databases
-            </TabsTrigger>
-            <TabsTrigger value="devops" triggerName="DevOps">
-              DevOps
-            </TabsTrigger>
-            <TabsTrigger value="soft" triggerName="Soft Skills">
-              Soft Skills
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="backend">
-            <Card className="text-foreground h-[50vh] bg-rose-950 md:p-2 pb-2">
-              <CardHeader className="md:hidden">
-                <CardTitle>Backend</CardTitle>
-              </CardHeader>
-              <BackendContent />
-            </Card>
-          </TabsContent>
-          <TabsContent value="frontend">
-            <Card className="text-foreground h-[50vh] bg-sky-950">
-              <CardHeader className="md:hidden">
-                <CardTitle>Frontend</CardTitle>
-              </CardHeader>
-              <FrontendContent />
-            </Card>
-          </TabsContent>
-          <TabsContent value="databases">
-            <Card className="text-foreground h-[50vh] bg-teal-950">
-              <CardHeader className="md:hidden">
-                <CardTitle>Databases</CardTitle>
-              </CardHeader>
-              <DatabaseContent />
-            </Card>
-          </TabsContent>
-          <TabsContent value="devops">
-            <Card className="text-foreground h-[50vh] bg-indigo-950">
-              <CardHeader className="md:hidden">
-                <CardTitle>DevOps</CardTitle>
-              </CardHeader>
-              <DevOpsContent />
-            </Card>
-          </TabsContent>
-          <TabsContent value="soft">
-            <Card className="text-foreground h-[50vh] bg-yellow-950">
-              <CardHeader className="md:hidden">
-                <CardTitle>Soft Skills</CardTitle>
-              </CardHeader>
-              <SoftSkillsContent />
-            </Card>
-          </TabsContent>
-        </Tabs>
+      <CardContent className="px-2 min-h-[25svh] md:min-h-[15svh] flex flex-wrap justify-center items-center gap-4">
+        <AnimatePresence mode="popLayout">
+          {currentLevel.map((item) => {
+            const isClickable = !!item.children;
+            const cardText =
+              i18n.language === "en" || !item.labelEs
+                ? item.labelEn
+                : item.labelEs;
+            const icon = "icon" in item ? item.icon : undefined;
+            return (
+              <motion.div
+                key={item.labelEn}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+              >
+                <MenuCard
+                  className={`transition rounded-2xl p-4 text-center h-full flex items-center justify-center ${
+                    isClickable ? "cursor-pointer hover:shadow-lg" : ""
+                  }`}
+                  onClick={() => isClickable && handleClick(item)}
+                  cardName={cardText}
+                  icon={icon}
+                />
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </CardContent>
     </Card>
   );

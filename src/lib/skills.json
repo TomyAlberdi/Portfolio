@@ -1,0 +1,52 @@
+[
+  {
+    "labelEn": "Backend",
+    "children": [
+      {
+        "labelEn": "Go",
+        "icon": "https://simpleicons.vercel.app/go/fff",
+        "children": [{ "labelEn": "Basic", "labelEs": "Básico" }]
+      },
+      {
+        "labelEn": "Java",
+        "icon": "/icons/java.svg",
+        "children": [
+          {
+            "labelEn": "Spring Boot",
+            "icon": "https://simpleicons.vercel.app/spring/fff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "labelEn": "Frontend",
+    "children": [
+      {
+        "labelEn": "React",
+        "children": [{ "labelEn": "Hooks" }, { "labelEn": "TSX" }]
+      }
+    ]
+  },
+  {
+    "labelEn": "Databases",
+    "labelEs": "Bases de Datos",
+    "children": [
+      {
+        "labelEn": "MongoDB",
+        "children": [{ "labelEn": "Mongoose" }]
+      },
+      {
+        "labelEn": "MySQL"
+      }
+    ]
+  },
+  {
+    "labelEn": "DevOps",
+    "children": [{ "labelEn": "Docker" }, { "labelEn": "GitHub Actions" }]
+  },
+  {
+    "labelEn": "Soft Skills",
+    "children": [{ "labelEn": "Communication", "labelEs": "Comunicación" }]
+  }
+]

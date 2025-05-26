@@ -12,7 +12,7 @@ const resources = {
       Home: "Home",
       Experience: "Professional Experience",
       Projects: "Personal Projects",
-      Stack: "Tech Stack / Skills",
+      Stack: "Stack / Skills",
       Contact: "Contact",
       SoftwareDeveloper: "Software Developer",
       About:
@@ -28,6 +28,7 @@ const resources = {
       ViewJobDescription: "View Job Description",
       Visit: "Visit",
       ViewMore: "View More",
+      Back: "Back",
     },
   },
   es: {
@@ -40,7 +41,7 @@ const resources = {
       Home: "Inicio",
       Experience: "Experiencia Profesional",
       Projects: "Proyectos Personales",
-      Stack: "Tech Stack / Skills",
+      Stack: "Stack / Skills",
       Contact: "Contacto",
       SoftwareDeveloper: "Desarrollador de Software",
       About:
@@ -58,6 +59,7 @@ const resources = {
       ViewJobDescription: "Ver Descripción del Trabajo",
       Visit: "Visitar",
       ViewMore: "Ver Más",
+      Back: "Atrás",
     },
   },
 };
