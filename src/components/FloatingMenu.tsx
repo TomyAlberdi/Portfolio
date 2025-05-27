@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { cn } from "@/lib/utils";
+import { cn, internalNavigate } from "@/lib/utils";
 
 interface FloatingMenuProps {
   Open: boolean;
@@ -22,16 +22,31 @@ interface FloatingMenuProps {
 }
 
 const sections = [
-  { icon: <House />, label: "Home", action: () => {} },
-  { icon: <Layers />, label: "Stack", action: () => {} },
-  { icon: <BriefcaseBusiness />, label: "Experience", action: () => {} },
-  { icon: <FolderGit2 />, label: "Projects", action: () => {} },
-  { icon: <AtSign />, label: "Contact", action: () => {} },
+  { icon: <House />, label: "Home", action: () => internalNavigate("home") },
+  {
+    icon: <Layers />,
+    label: "Stack",
+    action: () => internalNavigate("skills"),
+  },
+  {
+    icon: <BriefcaseBusiness />,
+    label: "Experience",
+    action: () => internalNavigate("experience"),
+  },
+  {
+    icon: <FolderGit2 />,
+    label: "Projects",
+    action: () => internalNavigate("projects"),
+  },
+  {
+    icon: <AtSign />,
+    label: "Contact",
+    action: () => internalNavigate("contact"),
+  },
 ];
 
 const FloatingMenu = ({ Open, setOpen }: FloatingMenuProps) => {
   const { t, i18n } = useTranslation();
-  //TODO: Add navigation between sections on menu click (use IDs)
   return (
     <CommandDialog open={Open} onOpenChange={setOpen}>
       <DialogHeader>
@@ -48,7 +63,7 @@ const FloatingMenu = ({ Open, setOpen }: FloatingMenuProps) => {
           {sections.map((section, i) => (
             <CommandItem
               key={section.label}
-              onSelect={section.action}
+              onSelect={() => section.action()}
               tabIndex={i}
             >
               {section.icon}

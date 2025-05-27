@@ -24,3 +24,10 @@ export const getActiveBackground = (value: string) => {
       return "bg-black/70";
   }
 };
+
+export const internalNavigate = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
