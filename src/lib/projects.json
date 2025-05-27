@@ -1,0 +1,59 @@
+[
+  {
+    "year": "2025",
+    "name_en": "Weather App",
+    "name_es": "App Climática",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
+      }
+    ],
+    "link": "https://ts-weather-app-beige.vercel.app/"
+  },
+  
+  {
+    "year": "2025",
+    "name_en": "Dynamic Albums Dashboard",
+    "name_es": "Panel de Álbumes Dinámico",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
+      }
+    ],
+    "link": "https://ts-albums-dashboard.vercel.app/"
+  }
+]

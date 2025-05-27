@@ -1,0 +1,88 @@
+[
+  {
+    "name_en": "DataTrainers Web",
+    "name_es": "DataTrainers Web",
+    "year": "2023 - 2024",
+    "link": "https://datatrainersllc.com/",
+    "role_en": "Lead Frontend Developer",
+    "role_es": "Desarrollador Frontend",
+    "description_en": "Freelancer job in which I developed an E-Commerce Web App to search, filter and buy online courses. This project includes API calls, responsive design, and accesibility options.",
+    "description_es": "Trabajo freelancer en el que desarrollé un E-Commerce web para buscar, filtrar y comprar cursos online. Este proyecto incluye llamadas a APIs, diseño responsive, y opciones de accesibilidad.",
+    "bkg_color": "#0c3547",
+    "accent_color": "#57D7B4",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "SCSS",
+        "icon": "https://simpleicons.vercel.app/sass/fff"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "https://simpleicons.vercel.app/javascript/fff"
+      },
+      {
+        "name": "GitLab",
+        "icon": "https://simpleicons.vercel.app/gitlab/fff"
+      }
+    ],
+    "wip": false
+  },
+  {
+    "name_en": "SB - Olavarría Ceramics",
+    "name_es": "SB - Cerámicos Olavarría",
+    "year": "2024 - pres",
+    "link": "https://github.com/TomyAlberdi/FA-System",
+    "role_en": "Lead Software Developer",
+    "role_es": "Desarrollador de Software",
+    "description_es": "Fui encargado de desarrollar un sistema ERP (Enterprise Resource Planning) completo para la empresa. Esto incluye administración de BBDD, manejo de autenticación y autorización, creación de la API CRUD y desarrollo de una Web App. Este sistema permite al usuario gestionar productos, stock, clientes y ventas, y cuenta con una versión mobile.",
+    "description_en": "I was in charge of developing a complete ERP (Enterprise Resource Planning) system for the company. This includes DB administration, authentication and authorization management, creation of the CRUD API and development of a Web App. This system allows the user to manage products, stock, customers and sales, and has a mobile version.",
+    "bkg_color": "#020818",
+    "accent_color": "#1d4ed7",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
+      },
+      {
+        "name": "Java",
+        "icon": "/icons/java.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "https://simpleicons.vercel.app/mysql/fff"
+      },
+      {
+        "name": "AWS",
+        "icon": "https://simpleicons.vercel.app/amazonwebservices/fff"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "https://simpleicons.vercel.app/spring/fff"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
+      },
+      {
+        "name": "GitHub",
+        "icon": "https://simpleicons.vercel.app/github/fff"
+      }
+    ],
+    "wip": false
+  }
+]
