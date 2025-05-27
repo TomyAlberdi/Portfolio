@@ -27,7 +27,7 @@
     ],
     "link": "https://ts-weather-app-beige.vercel.app/"
   },
-  
+
   {
     "year": "2025",
     "name_en": "Dynamic Albums Dashboard",
@@ -55,5 +55,33 @@
       }
     ],
     "link": "https://ts-albums-dashboard.vercel.app/"
+  },
+  {
+    "year": "2025",
+    "name_en": "Modular Pomodoro Timer",
+    "name_es": "Timer Pomodoro Modular",
+    "icons": [
+      {
+        "name": "React",
+        "icon": "https://simpleicons.vercel.app/react/fff"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
+      }
+    ],
+    "link": "https://www.modular-pomodoro.online/"
   }
 ]
