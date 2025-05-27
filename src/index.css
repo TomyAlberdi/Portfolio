@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -180,14 +180,44 @@ div.App {
 }
 
 .floatingMenuButton {
-  box-shadow: 0px -40px 26px 0px rgba(0,0,0,0.90) inset;
+  box-shadow: 0px -40px 26px 0px rgba(0, 0, 0, 0.9) inset;
 }
 
 .CardComponent {
-  backdrop-filter: blur(15px)
+  backdrop-filter: blur(15px);
 }
 
 .big-icon {
   width: 4rem;
   height: 4rem;
+}
+
+.alternate-font {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.welcomePage {
+  -webkit-animation: fade-out 0.5s ease-out 2s both;
+  animation: fade-out 0.5s ease-out 2s both;
+  span {
+    -webkit-animation: fade-out 1s ease-out 1s both;
+    animation: fade-out 1s ease-out 1s both;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
