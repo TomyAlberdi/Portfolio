@@ -24,3 +24,11 @@ export interface MenuItem {
   icon?: string;
   children?: MenuItem[];
 }
+
+export interface Project {
+  year: string;
+  name_en: string;
+  name_es: string;
+  icons: Icon[];
+  link: string;
+}

@@ -1,42 +1,59 @@
 [
   {
-    "year": "2023",
+    "year": "2025",
     "name_en": "Weather App",
-    "name_es": "App del Clima",
+    "name_es": "App Climática",
     "icons": [
       {
         "name": "React",
         "icon": "https://simpleicons.vercel.app/react/fff"
       },
       {
-        "name": "SCSS",
-        "icon": "https://simpleicons.vercel.app/sass/fff"
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
       },
       {
-        "name": "JavaScript",
-        "icon": "https://simpleicons.vercel.app/javascript/fff"
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
       }
     ],
-    "link": "https://tomyalberdi.github.io/Weather-App/"
+    "link": "https://ts-weather-app-beige.vercel.app/"
   },
+  
   {
-    "año": "2023",
-    "nombre_english": "Favorite Albums Dashboard",
-    "nombre_spanish": "Panel de Álbumes Favoritos",
+    "year": "2025",
+    "name_en": "Dynamic Albums Dashboard",
+    "name_es": "Panel de Álbumes Dinámico",
     "icons": [
       {
         "name": "React",
         "icon": "https://simpleicons.vercel.app/react/fff"
       },
       {
-        "name": "SCSS",
-        "icon": "https://simpleicons.vercel.app/sass/fff"
+        "name": "TypeScript",
+        "icon": "https://simpleicons.vercel.app/typescript/fff"
       },
       {
-        "name": "JavaScript",
-        "icon": "https://simpleicons.vercel.app/javascript/fff"
+        "name": "Tailwind CSS",
+        "icon": "https://simpleicons.vercel.app/tailwindcss/fff"
+      },
+      {
+        "name": "Shadcn/ui",
+        "icon": "https://simpleicons.vercel.app/shadcnui/fff"
+      },
+      {
+        "name": "Vercel",
+        "icon": "https://simpleicons.vercel.app/vercel/fff"
       }
     ],
-    "link": "https://tomyalberdi.github.io/Albums-Dashboard/"
+    "link": "https://ts-albums-dashboard.vercel.app/"
   }
 ]
