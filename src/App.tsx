@@ -27,6 +27,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  //TODO: Implement welcome page
   return (
     <div className="App md:h-screen h-[100svh] flex flex-col items-center justify-start">
       <ScrollArea className="w-full md:w-4/5 md:h-screen max-w-[1250px]"> 
