@@ -9,6 +9,7 @@ import Experience from "@/Pages/Experience";
 import Projects from "@/Pages/Projects";
 import Skills from "@/Pages/Skills";
 import Contact from "@/Pages/Contact";
+import { Toaster } from "@/components/ui/sonner";
 
 function App() {
   const [FloatingMenuOpen, setFloatingMenuOpen] = useState(false);
@@ -30,13 +31,12 @@ function App() {
   //TODO: Implement welcome page
   return (
     <div className="App md:h-screen h-[100svh] flex flex-col items-center justify-start">
-      <ScrollArea className="w-full md:w-4/5 md:h-screen max-w-[1250px]"> 
+      <ScrollArea className="w-full md:w-4/5 md:h-screen max-w-[1250px]">
         <section className="w-full h-full flex flex-col justify-start items-center gap-2 px-2 py-2">
           <Home />
           <Skills />
           <Experience />
           <Projects />
-          {/* TODO: add extra spacing at bottom of component equal to floating menu button container height */}
           <Contact />
         </section>
       </ScrollArea>
@@ -45,6 +45,7 @@ function App() {
         setOpen={setFloatingMenuOpen}
       />
       <FloatingMenu Open={FloatingMenuOpen} setOpen={setFloatingMenuOpen} />
+      <Toaster />
     </div>
   );
 }

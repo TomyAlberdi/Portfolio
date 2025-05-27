@@ -186,3 +186,8 @@ div.App {
 .CardComponent {
   backdrop-filter: blur(15px)
 }
+
+.big-icon {
+  width: 4rem;
+  height: 4rem;
+}
