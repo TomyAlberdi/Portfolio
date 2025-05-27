@@ -82,7 +82,7 @@ const ContactForm = () => {
           id="name"
           name="from_name"
           type="text"
-          placeholder={t("Enter your name")}
+          placeholder={t("EnterName")}
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
@@ -93,7 +93,7 @@ const ContactForm = () => {
           id="email"
           name="from_email"
           type="email"
-          placeholder={t("Enter your email")}
+          placeholder={t("EnterEmail")}
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
@@ -104,7 +104,7 @@ const ContactForm = () => {
           className="resize-none"
           id="message"
           name="message"
-          placeholder={t("Enter your message")}
+          placeholder={t("EnterMessage")}
           value={formData.message}
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })

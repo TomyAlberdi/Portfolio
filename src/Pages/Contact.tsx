@@ -18,7 +18,7 @@ const Contact = () => {
       <CardContent className="w-full flex flex-col md:flex-row justify-start items-center md:gap-0 gap-10">
         <section className="flex justify-evenly items-center md:w-1/3 w-full">
           <Card
-            className="flex flex-col items-center justify-center w-2/5 aspect-square cursor-pointer hover:scale-102 transition-all duration-300 ease-in-out bg-muted"
+            className="flex flex-col items-center justify-center min-w-[140px] w-2/5 aspect-square cursor-pointer hover:scale-102 transition-all duration-300 ease-in-out bg-muted"
             onClick={() => navigate("https://github.com/TomyAlberdi")}
           >
             <img
@@ -29,7 +29,7 @@ const Contact = () => {
             <span>GitHub</span>
           </Card>
           <Card
-            className="flex flex-col items-center justify-center w-2/5 aspect-square cursor-pointer hover:scale-102 transition-all duration-300 ease-in-out bg-blue-900"
+            className="flex flex-col items-center justify-center min-w-[140px] w-2/5 aspect-square cursor-pointer hover:scale-102 transition-all duration-300 ease-in-out bg-blue-900"
             onClick={() => navigate("https://linkedin.com/in/tomás-alberdi")}
           >
             <Linkedin className="big-icon" />
